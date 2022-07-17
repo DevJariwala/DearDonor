@@ -1,70 +1,61 @@
-# Getting Started with Create React App
+Dear Donor: Crowdfunding Platform Powered by Ethereum Blockchain
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+The Platform is live on Rinkeby Test Network and available to use at: https://deardonor.netlify.app/
 
-## Available Scripts
+# Screenshots
+Home Page:
+![image](https://user-images.githubusercontent.com/65401776/179399114-34214c18-ee38-4a46-a366-b831331388b2.png)
 
-In the project directory, you can run:
+Campaigns Page:
+![image](https://user-images.githubusercontent.com/65401776/179399158-b2d4c592-4568-4f82-9f1c-1451c708fd77.png)
 
-### `npm start`
+Create Campaign Page:
+![image](https://user-images.githubusercontent.com/65401776/179399190-dd0f7476-89b0-4ee4-8f9a-676730e5bd3d.png)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Dashboard Page:
+![image](https://user-images.githubusercontent.com/65401776/179399213-c8089b4f-13e6-43d4-a3fb-22664eb0ae4f.png)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Tech Stack
+React Js
 
-### `npm test`
+Solidity
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Web3.js
 
-### `npm run build`
+## To run the application locally
+fork the project
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+run npm install to install all the dependencies
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+run the npm start to run the application locally
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Prerequisites to create Campaign and Contribute
 
-### `npm run eject`
+1.Install Metamask as Google Chrome Extention and Create an account.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+2.Request Ether by sharing your ethereum address on social media.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+(https://faucet.rinkeby.io/)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+3.Get 0.01 ether free by giving the ethereum address
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+(http://rinkeby-faucet.com/)
 
-## Learn More
+## To Deploy your own Contract
+1.Create an account in https://infura.io
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+2.Create .env.local file in Ethereum directory and add these line to it.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+NEXT_PUBLIC_RPC_URL=https://rinkeby.infura.io/v3/2b327d68e3274235be80df231540ee29 (infura url like this)
 
-### Code Splitting
+NEXT_PUBLIC_PRIVATE_KEY=bdee38f728f0ed4fc4ccacd71dbda0e9d416ce907540776893e1c108618787f9 (private key of you metamask account)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+3.Do the Changes that you want to do inside the Solidity File
 
-### Analyzing the Bundle Size
+4.Compile the Contract node compile.js
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+5.To Deploy contract run -> npx hardhat run src/scripts/deploy.js
 
-### Making a Progressive Web App
+Copy the contract deploy address and replace it in src/constant.js file.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+6.also replace RPC_URL
