@@ -1,0 +1,59 @@
+.campaign{
+    width: 300px;
+    margin: 10px;
+    background-color: white;
+    /* background-color: aqua; */
+    /* display: flex; */
+    /* align-items: center;
+    justify-content: center;
+    flex-direction: column; */
+}
+
+.campaign__title{
+    padding: 0px 5px 0px 5px;
+}
+
+.campaign__owner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: -10px;
+    padding: 0px 5px 0px 5px;
+    
+}
+
+.campaign__amount{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: -10px;
+    padding: 0px 5px 0px 5px;
+}
+
+.campaign__bnt{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.Btn{
+    width:252px;
+    margin-top:10px;
+    height: 30px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 13px;
+    letter-spacing: 1px;
+    color: white;
+    background-color: #0f7dcc;
+    border: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.Btn:hover{
+    background-color: #ff6250;
+}

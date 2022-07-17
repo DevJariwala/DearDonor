@@ -1,0 +1,147 @@
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 10px;
+    height: 50px;
+    position: sticky;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    background-color: white;
+}
+
+.navbar__name{
+    font-size: 25px;
+    font-weight: bold;
+    font-family: cursive;
+    cursor: pointer;
+}
+
+.navbar__category{
+    display: flex;
+    align-items: center;
+}
+
+.navbar__p{
+    margin: 0px 15px;
+    cursor: pointer;
+    letter-spacing: 1px;
+    color: black;
+    font-weight: 450;
+    background-color: white;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.navbar__category>p{
+    text-transform: uppercase;
+}
+
+.navbar__p:hover{
+    background-color: black;
+    border-radius: 10px;
+    padding: 5px;
+    color: white;
+}
+
+.wallet__btn{
+    display: flex;
+    align-items: center;
+}
+
+.wallet{
+    padding-left: 5px;
+    padding-right: 5px;
+    cursor: pointer;
+}
+.outside__menu{
+    margin: 10px;
+}
+
+.menu__icon{
+    position: absolute;
+    right: 10px;
+    margin-top: -10px;
+    margin-right: 0px;
+    cursor: pointer;
+}
+
+.burger__nav{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: black;
+    width: 300px;
+    z-index: 100;
+    list-style: none;
+    padding: 40px;
+    transform: translateX(1024px);
+    transition: transform 1.5s ease-out;
+}
+
+.display{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: black;
+    width: 300px;
+    z-index: 100;
+    list-style: none;
+    padding: 40px;
+    transform: translateX(0px);
+    transition: transform 0.9s ease-in;
+}
+
+.closeIcon{
+    position: absolute;
+    right: 10px;
+    margin-top: -10px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+
+.burger__nav>p{
+    padding: 15px 0;
+    text-align: center;
+    text-transform: uppercase;
+    border-bottom: 1px solid rgb(122, 122, 122);
+    color: white;
+    cursor: pointer;
+}
+
+.burger__nav>p:hover{
+    color: gray;
+    transition: 0.5s ease-in-out;
+}
+
+
+@media (min-width:850px){
+    .outside__menu{
+        display:none;
+    }
+    .menu__icon{
+        display: none;
+    }
+}
+
+@media (max-width:850px){
+    .navbar__category{
+        display: none;
+    }
+}
+
+/* @media (max-width:850){
+    .outside__menu{
+        display:none;
+    }
+    .menu__icon{
+        display: none;
+    }
+} */
+
+
+
